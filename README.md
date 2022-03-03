@@ -52,7 +52,7 @@ The "deploy.ps1" file above can be downloaded and run locally against this repo,
 * It will then create an RDP connectoid in that folder for each server and client that was deployed.
 * It will then create an HTTP shortcut to the ADFS WAP endpoint for testing and confirming the deployment.
 
-The deploy script master has a [line](https://github.com/Azure-Samples/active-directory-lab-hybrid-adfs/blob/master/lab-hybrid-adfs/deploy.ps1#L48) that allows you to separate your specific variables from the master via dot-sourcing. Here's a sample dot-sourced variable overrides file:
+The deploy script master has a [line](https://github.com/yswang1024/active-directory-lab-hybrid-adfs/blob/master/lab-hybrid-adfs/deploy.ps1#L48) that allows you to separate your specific variables from the master via dot-sourcing. Here's a sample dot-sourced variable overrides file:
 ```powershell
 #Login if necessary
 $AzureSub = "My Azure Subscription"try { $ctx=Get-AzureRmContext -ErrorAction Stop }
