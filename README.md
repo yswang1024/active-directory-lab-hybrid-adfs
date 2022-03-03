@@ -4,8 +4,8 @@
 
 Description | Link
 --- | ---
-Full deploy - AD, ADFS, WAP | <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Factive-directory-lab-hybrid-adfs%2Fmaster%2Flab-hybrid-adfs%2FNoClientDeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
-Full deploy - AD, ADFS, WAP, _with client machines*_ | <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Factive-directory-lab-hybrid-adfs%2Fmaster%2Flab-hybrid-adfs%2FFullDeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
+Full deploy - AD, ADFS, WAP | <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fyswang1024%2Factive-directory-lab-hybrid-adfs%2Fmaster%2Flab-hybrid-adfs%2FNoClientDeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
+Full deploy - AD, ADFS, WAP, _with client machines*_ | <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fyswang1024%2Factive-directory-lab-hybrid-adfs%2Fmaster%2Flab-hybrid-adfs%2FFullDeploy.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
 
 ## Details
 * Deploys the following infrastructure:
@@ -72,7 +72,7 @@ if ($ctx.SubscriptionName -ne $AzureSub) { Set-AzureRmContext -SubscriptionName 
     $clientsToDeploy         = @("7")
     $clientImageBaseResource = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/ImageRG/providers/Microsoft.Compute/images/"
     $AdfsFarmCount           = "1";
-    $AssetLocation           = "https://raw.githubusercontent.com/Azure-Samples/active-directory-lab-hybrid-adfs/$Branch/lab-hybrid-adfs/"
+    $AssetLocation           = "https://raw.githubusercontent.com/yswang1024/active-directory-lab-hybrid-adfs/$Branch/lab-hybrid-adfs/"
 
     $usersArray              = @(
                                 @{ "FName"= "Bob"; "LName"= "Jones"; "SAM"= "bjones" },
