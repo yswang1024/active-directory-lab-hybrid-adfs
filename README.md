@@ -1,6 +1,20 @@
 # Azure Active Directory Hybrid ADFS Lab
+
+## 基于原脚本做了如下修改：
+
+* 服务器版本升级到 Windows Server 2019
+* 域控制器林版本升级到 2016，支持最新OIDC
+* 增加低成本B1s机器可供选择，但不建议使用
+
+## 尚未修复：
+* 部分脚本出错（原脚本原因，不影响总体部署）
+* 原脚本提供的WAP服务器无用，尚未删除，部署后手动删除WAP相关资源即可
+* ADFS服务器部署后需要手动加入域（因为需要手动导入证书，所以没什么太大的影响，最后都要手动操作）
+
 ## Creates full AD/CA/ADFS/WAP environment with Azure AD Connect installed
 ## Quick Start
+
+
 
 Description | Link
 --- | ---
